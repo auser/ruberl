@@ -1,4 +1,3 @@
-require "socket"
 module Ruberl
   class Base
     attr_accessor :host, :port
