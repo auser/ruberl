@@ -5,7 +5,7 @@ h1. &#x2192; 'ruberl'
 
 h2. What
 
-A quick and dirty module you can include in your classes to give you an easy connection to your gen_tcp erlang server
+A quick and easy way you can easily talk to your gen_tcp/gen_server erlang server
 
 h2. Installing
 
