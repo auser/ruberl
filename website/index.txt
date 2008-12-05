@@ -1,0 +1,46 @@
+h1. ruberl
+
+h1. &#x2192; 'ruberl'
+
+
+h2. What
+
+A quick and dirty module you can include in your classes to give you an easy connection to your gen_tcp erlang server
+
+h2. Installing
+
+<pre syntax="ruby">sudo gem install auser-ruberl</pre>
+
+h2. The basics
+
+
+h2. Demonstration of usage
+
+require 'ruberl'
+
+class TestClass
+  include Ruberl
+end
+
+@tc = TestClass.new
+@tc.host = "host"
+@tc.port = "8091"
+@tc.messenger_send!("message with args")
+
+OR
+
+TestClass.new("host", "8091").messenger_send!("message with args")
+
+h3. Install
+
+<pre>gem install auser-ruberl</pre>
+
+
+h2. License
+
+This code is free to use under the terms of the MIT license. 
+
+h2. Contact
+
+Comments are welcome. Send an email to "Ari Lerner":mailto:arilerner@mac.com
+

@@ -1,0 +1,4 @@
+Thanks!
+
+For more information on ruberl, see http://ruberl.rubyforge.org
+
