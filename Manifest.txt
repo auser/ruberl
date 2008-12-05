@@ -7,13 +7,16 @@ config/hoe.rb
 config/requirements.rb
 lib/ruberl.rb
 lib/ruberl/version.rb
+ruberl.gemspec
 script/console
 script/destroy
 script/generate
 script/txt2html
 setup.rb
+tasks/Manifest.txt
 tasks/deployment.rake
 tasks/environment.rake
+tasks/github.rake
 tasks/website.rake
 test/test_helper.rb
 test/test_ruberl.rb
