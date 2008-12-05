@@ -1,4 +1,4 @@
-Thanks!
+Thanks and check out the blog post http://blog.xnot.org/2008/12/04/ruberl-erlang-to-rubygem/ for more information and usage
 
 For more information on ruberl, see http://ruberl.rubyforge.org
 
