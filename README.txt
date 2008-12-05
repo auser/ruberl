@@ -4,14 +4,13 @@ http://poolpartyrb.com
 
 == DESCRIPTION:
 
-A quick and dirty module you can include in your classes to give you an easy connection to your gen_tcp erlang server
+A quick and easy way you can easily talk to your gen_tcp/gen_server erlang server
 
 == SYNOPSIS:
 
   require 'ruberl'
   
-  class TestClass
-    include Ruberl
+  class TestClass < Ruberl::Base
   end
   
   @tc = TestClass.new

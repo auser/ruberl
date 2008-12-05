@@ -18,8 +18,7 @@ h2. Demonstration of usage
 
 require 'ruberl'
 
-class TestClass
-  include Ruberl
+class TestClass < Ruberl::Base
 end
 
 @tc = TestClass.new
