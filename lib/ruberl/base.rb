@@ -1,11 +1,11 @@
 module Ruberl
   class Base
     attr_accessor :host, :port, :recv_timeout
-    def initialize(host="localhost", port=7050)
+    def initialize(host="localhost", port=7050, opts={})
       @host = host
       @port = port
       
-      @recv_timeout = 3
+      @recv_timeout = opts[:timeout] || 3
     end
     def with_socket(&block)
       begin
@@ -27,13 +27,13 @@ module Ruberl
       end
       out
     end
-    def messenger_cast!(cmd)
+    def messenger_cast!(cmd, opts={})
       with_udp do |sock|
         sock.send(cmd, 0, @host, @port)
-        @resp = if select([sock], nil, nil, @recv_timeout)
+        @resp = if select([sock], nil, nil, @recv_timeout) && !opts[:no_receive]
           sock.recvfrom(65536)
         end
-        @resp[0] = @resp[0][4..-1] if @resp
+        @resp[0] = @resp[0][4..-1] if @resp && !opts[:no_strip_header]
       end
       @resp ? @resp[0] : nil
     end
