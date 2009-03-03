@@ -1,10 +1,12 @@
+# -*- encoding: utf-8 -*-
+
 Gem::Specification.new do |s|
   s.name = %q{ruberl}
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ari Lerner"]
-  s.date = %q{2008-12-05}
+  s.date = %q{2009-03-03}
   s.description = %q{A quick and dirty module you can include in your classes to give you an easy connection to your gen_tcp erlang server}
   s.email = ["arilerner@mac.com"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.txt", "website/index.txt"]
@@ -19,7 +21,7 @@ For more information on ruberl, see http://ruberl.rubyforge.org
   s.rdoc_options = ["--main", "README.txt"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{ruberl}
-  s.rubygems_version = %q{1.2.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{A quick and dirty module you can include in your classes to give you an easy connection to your gen_tcp erlang server}
   s.test_files = ["test/test_helper.rb", "test/test_ruberl.rb"]
 
@@ -27,12 +29,12 @@ For more information on ruberl, see http://ruberl.rubyforge.org
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 2
 
-    if current_version >= 3 then
-      s.add_development_dependency(%q<hoe>, [">= 1.8.2"])
+    if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+      s.add_development_dependency(%q<hoe>, [">= 1.8.0"])
     else
-      s.add_dependency(%q<hoe>, [">= 1.8.2"])
+      s.add_dependency(%q<hoe>, [">= 1.8.0"])
     end
   else
-    s.add_dependency(%q<hoe>, [">= 1.8.2"])
+    s.add_dependency(%q<hoe>, [">= 1.8.0"])
   end
 end
