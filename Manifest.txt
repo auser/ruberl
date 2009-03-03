@@ -8,7 +8,6 @@ config/requirements.rb
 lib/ruberl.rb
 lib/ruberl/base.rb
 lib/ruberl/version.rb
-ruberl.gemspec
 script/console
 script/destroy
 script/generate

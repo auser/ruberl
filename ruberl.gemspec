@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{A quick and dirty module you can include in your classes to give you an easy connection to your gen_tcp erlang server}
   s.email = ["arilerner@mac.com"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.txt", "website/index.txt"]
-  s.files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.txt", "Rakefile", "config/hoe.rb", "config/requirements.rb", "lib/ruberl.rb", "lib/ruberl/base.rb", "lib/ruberl/version.rb", "ruberl.gemspec", "script/console", "script/destroy", "script/generate", "script/txt2html", "setup.rb", "spec/base_spec.rb", "spec/spec_helper.rb", "tasks/deployment.rake", "tasks/environment.rake", "tasks/website.rake", "test/test_helper.rb", "test/test_ruberl.rb", "website/index.html", "website/index.txt", "website/javascripts/rounded_corners_lite.inc.js", "website/stylesheets/screen.css", "website/template.html.erb"]
+  s.files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.txt", "Rakefile", "config/hoe.rb", "config/requirements.rb", "lib/ruberl.rb", "lib/ruberl/base.rb", "lib/ruberl/version.rb", "script/console", "script/destroy", "script/generate", "script/txt2html", "setup.rb", "spec/base_spec.rb", "spec/spec_helper.rb", "tasks/deployment.rake", "tasks/environment.rake", "tasks/website.rake", "test/test_helper.rb", "test/test_ruberl.rb", "website/index.html", "website/index.txt", "website/javascripts/rounded_corners_lite.inc.js", "website/stylesheets/screen.css", "website/template.html.erb"]
   s.has_rdoc = true
   s.homepage = %q{http://ruberl.rubyforge.org}
   s.post_install_message = %q{Thanks and check out the blog post http://blog.xnot.org/2008/12/04/ruberl-erlang-to-rubygem/ for more information and usage

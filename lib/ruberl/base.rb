@@ -17,7 +17,7 @@ module Ruberl
       end
     end
     def with_udp(&block)
-      out,sock = nil,nil
+      out,socket = nil,nil
       begin
         socket = UDPSocket.open
         out = yield(socket)
