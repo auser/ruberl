@@ -22,6 +22,11 @@ A quick and easy way you can easily talk to your gen_tcp/gen_server erlang serve
   
   TestClass.new("host", "8091").messenger_send!("message with args")
 
+== COMMUNITY
+
+Check out the Mountain West Ruby Conference Video:
+	http://mwrc2009.confreaks.com/13-mar-2009-17-35-machine-learning-david-richards.html
+
 == INSTALL:
 
   gem install auser-ruberl
